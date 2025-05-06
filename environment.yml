@@ -1,0 +1,30 @@
+name: dreamt
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.13
+  - pip
+  - numpy
+  - ipykernel
+  - scikit-datasets
+  - scikit-fda
+  - pandas
+  - tqdm
+  - mpmath
+  - joblib
+  - tornado
+  - pyzmq
+  - unicodedata2
+  - matplotlib
+  - lazy_loader
+  - tk
+  - pip:
+      - seaborn
+      - torch
+      - lightgbm
+      - gpboost
+      - hyperopt
+      - imbalanced-learn
+      - ipywidgets
+      - shap
