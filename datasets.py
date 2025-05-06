@@ -387,3 +387,16 @@ def resample_data(X_train, y_train, group_train, group_variable):
     group_train_resampled = combined_resampled[:, -len(group_variable) :]
 
     return X_train_resampled, y_train_resampled, group_train_resampled
+
+def remove_hrv_hfd_features(feature_list):
+  """
+  Removes strings containing 'HRV_HFD' from a list of strings.
+
+  Args:
+    feature_list: A list of strings.
+
+  Returns:
+    A new list with strings containing 'HRV_HFD' removed.
+  """
+  updated_list = [feature for feature in feature_list if 'HRV_HFD' not in feature]
+  return updated_list

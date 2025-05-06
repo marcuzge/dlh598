@@ -28,6 +28,9 @@ clean_df, new_features, good_quality_sids = data_preparation(
 # Split data to train, validation, and test set
 SW_df, final_features = split_data(clean_df, good_quality_sids, new_features)
 
+# # Uncomment to update and remove all hrv_hfd related features.
+# final_features = remove_hrv_hfd_features(final_features)
+
 random.seed(0)
 train_sids = random.sample(good_quality_sids, 56)
 remaining_sids = [subj for subj in good_quality_sids if subj not in train_sids]
