@@ -25,7 +25,8 @@ conda env create --file environment.yml
 ```
  python feature_engineering.py
 ```
-Or you can use the existing pre-populated features_df in `\dataset_sample\features_df`. \n
+Or you can use the existing pre-populated features_df in `\dataset_sample\features_df`.
+\
 4. Run the script to calcute quality score:
 ```
  python calculate_quality_score.py
