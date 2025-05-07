@@ -20,12 +20,12 @@ conda env create --file environment.yml
 
 ## How to run
 1. Download the dataset from https://physionet.org/content/dreamt/2.0.0/
-2. Update `feature_engineering.py`'s `data_folder` path to `data_64hz\` from step 1.
+2. Update `feature_engineering.py`'s `data_folder` path to `\data_64hz` from step 1.
 3. Run the feature_engineering script using:
 ```
  python feature_engineering.py
 ```
-Or you can use the existing pre-populated features_df in `\dataset_sample\features_df`
+Or you can use the existing pre-populated features_df in `\dataset_sample\features_df`. \n
 4. Run the script to calcute quality score:
 ```
  python calculate_quality_score.py
